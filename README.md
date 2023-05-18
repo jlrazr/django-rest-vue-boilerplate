@@ -30,12 +30,11 @@ Backend:
 
 ### Template Structure
 
-| Location                         |  Content                                   |
-|----------------------------------|--------------------------------------------|
-| `/backend`                       | Django Project & Backend Config            |
-| `/backend/api`                   | Django App (`/api`)                        |
-| `/frontend`                      | Vue App .                                  |
-| `/frontend/src/main.js`          | JS Application Entry Point                 |
-| `/frontend/public/index.html`    | Html Application Entry Point (/)           |
-| `/frontend/src/assets`           | Static Assets                              |
-| `/backend/dist/`                 |                                            |
+| Location                                   |  Content                                   |
+|--------------------------------------------|--------------------------------------------|
+| `/backend`                                 | Django Project & Backend Config            |
+| `/frontend/client-app`                     | Vue App .                                  |
+| `/frontend/client-app/src/main.js`         | JS Application Entry Point                 |
+| `/frontend/client-app/public/index.html`   | Html Application Entry Point (/)           |
+| `/frontend/client-app/src/assets`          | Static Assets                              |
+
