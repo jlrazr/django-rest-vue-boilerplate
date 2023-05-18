@@ -1,9 +1,11 @@
 <script setup>
-import { ref } from 'vue'
 import { useExampleStore } from '../stores/exampleStore'
 
 defineProps({
-  msg: String,
+  msg: {
+    type: String,
+    default: "",
+  },
 })
 
 const exampleStore = useExampleStore()
@@ -20,6 +22,4 @@ const exampleStore = useExampleStore()
   </div>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

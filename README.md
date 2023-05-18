@@ -24,6 +24,9 @@ Backend:
 1. $cd backend/
 2. $python manage.py runserver
 
+#### Prettier
+Make sure your VS Code is configured to format on save. This will ensure that your code is formatted correctly before committing.
+
 #### Build
 
 ### Deploy
