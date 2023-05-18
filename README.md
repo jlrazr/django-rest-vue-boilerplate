@@ -17,19 +17,19 @@ A boilerplate for applications made with Django Rest Framework and VueJS.
 
 ### Running Development Servers
 Frontend:
-$cd frontend/client-app/
-$npm run dev
+1. $cd frontend/client-app/
+2. $npm run dev
 
 Backend:
-$cd backend/
-$python manage.py runserver
+1. $cd backend/
+2. $python manage.py runserver
 
 #### Build
 
 ### Deploy
 
 ### Template Structure
----------------------------------------------------------------------------------
+
 | Location                         |  Content                                   |
 |----------------------------------|--------------------------------------------|
 | `/backend`                       | Django Project & Backend Config            |
@@ -39,4 +39,3 @@ $python manage.py runserver
 | `/frontend/public/index.html`    | Html Application Entry Point (/)           |
 | `/frontend/src/assets`           | Static Assets                              |
 | `/backend/dist/`                 |                                            |
----------------------------------------------------------------------------------
