@@ -41,3 +41,6 @@ Make sure your VS Code is configured to format on save. This will ensure that yo
 | `/frontend/client-app/public/index.html`   | Html Application Entry Point (/)           |
 | `/frontend/client-app/src/assets`          | Static Assets                              |
 
+### API Urls
+1. Tasks: http://localhost:8000/tasks/api/v1/
+2. Tasks API Documentation: http://127.0.0.1:8000/tasks/docs/

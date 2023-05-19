@@ -1,5 +1,5 @@
 <script setup>
-import { useExampleStore } from '../stores/exampleStore'
+import { useExampleStore } from '@/stores/exampleStore'
 
 defineProps({
   msg: {
