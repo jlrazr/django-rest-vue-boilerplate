@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <router-link to="/">Tasks</router-link>
+  <router-link to="/"></router-link>
   <router-view></router-view>
 </template>
 

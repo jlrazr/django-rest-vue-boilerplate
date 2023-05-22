@@ -1,20 +1,21 @@
 <template>
-  <h2>Tasks Page</h2>
-
-  <div class="new-task">
-    <input type="text" name="title" id="title" placeholder="Enter the title here" v-model="title">
-    <p>Your title is: {{ title }}</p>
-    <input type="textarea" v-model="description" name="description" id="description"
-      placeholder="Enter the description here" />
-    <!-- <button @click="store.postTask('/tasks/api/v1/tasks/', newTaskData)">Create new Task</button> -->
-    <button @click="createTasks">Create new Task</button>
-  </div>
-  <div v-for="task in tasks" :key="task.id" class="task-container">
-    <h3>{{ task.title }}</h3>
-    <p>{{ task.description }}</p>
-    <label :for="task.title">Complete task</label>
-    <input type="checkbox" name="completed" :id="task.title"
-      @click="store.deleteTask(`/tasks/api/v1/tasks/${task.id}/`)" />
+  <div class="container mx-auto">
+    <div class="new-task flex">
+      <form class="bg-gray-700 py-4 px-4 mb-2 container">
+        <input type="text" name="title" id="title" placeholder="Enter the title here" v-model="title" required
+          class="text-gray-700 my-2">
+        <input type="textarea" v-model="description" name="description" id="description"
+          placeholder="Enter the description here" class="text-gray-700 my-2 mx-2" />
+        <button class="text-gray-100 my-2" @click="createTasks">Create new Task</button>
+      </form>
+    </div>
+    <div v-for="task in tasks" :key="task.id" class="task bg-gray-700 py-4 px-4 mb-2">
+      <h3 class="text-gray-100 my-2">{{ task.title }}</h3>
+      <p class="text-gray-100 my-2">{{ task.description }}</p>
+      <label class="text-gray-100 my-2" :for="task.title">Complete task</label>
+      <input type="checkbox" name="completed" :id="task.title"
+        @click="store.deleteTask(`/tasks/api/v1/tasks/${task.id}/`)" />
+    </div>
   </div>
 </template>
 
@@ -26,9 +27,6 @@ const store = useTasksStore()
 const tasks = computed(() => store.tasks)
 const title = ref("")
 const description = ref("")
-
-
-
 const createTasks = () => {
   const newTaskData = {
     "title": title.value,
@@ -37,7 +35,6 @@ const createTasks = () => {
   }
 
   store.postTask('/tasks/api/v1/tasks/', newTaskData)
-
   title.value = ""
   description.value = ""
 }
@@ -48,11 +45,10 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-.task-container {
+.task {
+  display: block;
   border: 1px solid rgb(175, 175, 175);
   border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
 
   h3 {
     font-size: 24px;
