@@ -8,14 +8,14 @@ export default defineConfig({
 
   resolve: {
     alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
 
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/assets/styles/_vars.scss";`
+        additionalData: `@import "./src/assets/styles/main.scss";`
       }
     }
   }
