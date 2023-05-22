@@ -36,7 +36,7 @@ Make sure your VS Code is configured to format on save. This will ensure that yo
 | Location                                   |  Content                                   |
 |--------------------------------------------|--------------------------------------------|
 | `/backend`                                 | Django Project & Backend Config            |
-| `/frontend/client-app`                     | Vue App .                                  |
+| `/frontend/client-app`                     | Vue App root                               |
 | `/frontend/client-app/src/main.js`         | JS Application Entry Point                 |
 | `/frontend/client-app/public/index.html`   | Html Application Entry Point (/)           |
 | `/frontend/client-app/src/assets`          | Static Assets                              |
